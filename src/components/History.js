@@ -8,7 +8,7 @@ function History() {
     const getRates = async () => {
       try {
         const response = await fetch(
-          `https://openexchangerates.org/api/historical/2022-06-30.json?app_id=9a4620dbba0c44ccbb35458a801ed63f`
+          `https://openexchangerates.org/api/historical/2022-06-29.json?app_id=9a4620dbba0c44ccbb35458a801ed63f`
         );
         const data = await response.json();
         setExchangeRates(data.rates);
